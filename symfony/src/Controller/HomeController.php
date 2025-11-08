@@ -11,8 +11,8 @@ class HomeController extends AbstractController
     #[Route('/', name: 'app_home')]
     public function index(): Response
     {
-        // In a real Symfony app, you would fetch data from the database here
-        // For now, we'll just render the template.
+        // In the future, we will fetch job categories from the database here
+        // For now, we just render the template.
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
         ]);
